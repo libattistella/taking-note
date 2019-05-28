@@ -9,16 +9,16 @@ export class NotesService {
 
   notesChanged = new Subject<Note[]>();
   notes: Note[] = [{
-    title: 'Titulo',
-    description: 'Descripcion'
+    title: 'Titulo 1',
+    description: 'Descripcion 1'
   },
   {
-    title: 'Titulo',
-    description: 'Descripcion'
+    title: 'Titulo 2',
+    description: 'Descripcion 2'
   },
   {
-    title: 'Titulo',
-    description: 'Descripcion'
+    title: 'Titulo 3',
+    description: 'Descripcion 3'
   }];
 
   constructor() { }
