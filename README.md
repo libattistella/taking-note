@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation
 
-Install [Node.js](https://nodejs.org)
-Install [Angular CLI](https://github.com/angular/angular-cli)
+Install [Node.js](https://nodejs.org)  
+Install [Angular CLI](https://github.com/angular/angular-cli)  
 Run `npm install` on the root folder.
 
 ## Development server
