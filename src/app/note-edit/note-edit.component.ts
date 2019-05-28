@@ -24,7 +24,6 @@ export class NoteEditComponent implements OnInit {
       (params: Params) => {
         this.id = +params.id;
         this.note = this.noteSvc.getNote(this.id);
-        console.log('Note', this.note);
         this.initForm();
       }
     );
@@ -33,14 +32,13 @@ export class NoteEditComponent implements OnInit {
   initForm() {
     this.noteForm = new FormGroup({
       title: new FormControl(this.note.title, Validators.required),
-      description: new FormControl(this.note.title, Validators.required)
+      description: new FormControl(this.note.description, Validators.required)
     });
   }
 
   onSubmit() {
     this.note.title = this.noteForm.controls.title.value;
     this.note.description = this.noteForm.controls.description.value;
-    console.log(this.note);
     this.noteSvc.updateNote(this.id, this.note);
     this.onCancel();
   }

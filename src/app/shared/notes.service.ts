@@ -22,6 +22,26 @@ export class NotesService {
     title: 'Titulo 3',
     description: 'Descripcion 3',
     color: '#f04141'
+  },
+  {
+    title: 'Titulo 4',
+    description: 'Descripcion 4',
+    color: '#3880ff'
+  },
+  {
+    title: 'Titulo 5',
+    description: 'Descripcion 5',
+    color: '#ffce00'
+  },
+  {
+    title: 'Titulo 6',
+    description: 'Descripcion 6',
+    color: '#3880ff'
+  },
+  {
+    title: 'Titulo 7',
+    description: 'Descripcion 7',
+    color: '#ff8000'
   }];
 
   constructor() { }
@@ -35,7 +55,7 @@ export class NotesService {
   }
 
   addNote(note: Note) {
-    this.notes.push(note);
+    this.notes.unshift(note);
     this.notesChanged.next(this.notes.slice());
   }
 

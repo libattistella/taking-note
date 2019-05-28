@@ -63,3 +63,23 @@
   color: white;
   background-color: #7044ff;
 }
+
+.color-row {
+  align-items: center;
+}
+
+.color-row p{
+  margin: 0;
+}
+
+.color-viewer {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50px;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.btn-actions button {
+  margin: 0.5rem;
+}

@@ -2,6 +2,11 @@
   margin: 0.5rem;
 }
 
+.list {
+  height: 95vh;
+  overflow: auto;
+}
+
 /* .panel {
   display: block;
   width: 100%;

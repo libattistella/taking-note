@@ -20,9 +20,9 @@
       <div class="row">
         <div class="col-md-12">
           <div class="form-group">
-            <label for="description">Color</label>
+            <label for="description">Color: </label>
             <br>
-            <div class="btn-group" role="group" aria-label="Color">
+            <div class="btn-group flex-wrap" role="group" aria-label="Color">
               <button type="button" class="btn blue" (click)="setColorBlue()">Azul</button>
               <button type="button" class="btn red" (click)="setColorRed()">Rojo</button>
               <button type="button" class="btn yellow" (click)="setColorYellow()">Amarillo</button>
@@ -35,7 +35,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 text-center btn-actions">
-          <button type="button" class="btn btn-danger" (click)="onCancel()">Cancelar</button>
+          <button type="button" class="btn btn-outline-danger" (click)="onCancel()">Cancelar</button>
           <button type="submit" class="btn btn-success" [disabled]="!noteForm.valid || note.color == ''">Guardar</button>
         </div>
       </div>
