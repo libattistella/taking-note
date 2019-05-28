@@ -1,4 +1,27 @@
 .note {
+  margin: 0.5rem 0;
+}
+
+.note-btn {
+  padding: 0;
+  margin: 0 0.25rem;
+  text-decoration: none;
+}
+
+.remove-btn {
+  color: red;
+}
+
+.edit-btn {
+  color: green;
+}
+
+.note-btn:active,
+.note-btn:hover {
+  text-decoration: none;
+}
+
+/* .note {
   width: 90%;
   border: 2px solid green;
   border-radius: 10px;
@@ -21,4 +44,4 @@
 .note-description {
   font-size: 1rem;
   font-style: italic;
-}
+} */
