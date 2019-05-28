@@ -1,3 +1,7 @@
 <div *ngFor="let note of notes, let i = index">
   <app-note-item [note]="note" [index]="i"></app-note-item>
 </div>
+
+<div *ngIf="!notes.length" style="height: 100%; position: relative;">
+  <div style="position: absolute; top: 50%;">Comience a agregar sus notas!</div>
+</div>

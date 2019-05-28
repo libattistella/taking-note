@@ -19,6 +19,7 @@ export class NoteListComponent implements OnInit {
     this.subscription = this.notesSvc.notesChanged.subscribe(
       (notes: Note[]) => {
         this.notes = notes;
+        console.log("notes", notes);
       }
     );
     this.notes = this.notesSvc.getNotes();

@@ -26,6 +26,11 @@ export class NoteAddComponent implements OnInit {
   }
 
   initForm() {
+    this.note = {
+      title: '',
+      description: '',
+      color: ''
+    };
     this.noteForm = new FormGroup({
       title: new FormControl('', Validators.required),
       description: new FormControl('', Validators.required)
