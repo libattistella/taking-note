@@ -1,0 +1,65 @@
+.blue {
+  color: #3880ff;
+}
+
+.blue:active,
+.blue:hover,
+.blue:focus {
+  color: white;
+  background-color: #3880ff;
+}
+
+.red {
+  color: #f04141;
+}
+
+.red:active,
+.red:hover,
+.red:focus {
+  color: white;
+  background-color: #f04141;
+}
+
+.yellow {
+  color: #ffce00;
+}
+
+.yellow:active,
+.yellow:hover,
+.yellow:focus {
+  color: white;
+  background-color: #ffce00;
+}
+
+.green {
+  color: #10dc60;
+}
+
+.green:active,
+.green:hover,
+.green:focus {
+  color: white;
+  background-color: #10dc60;
+}
+
+.orange {
+  color: #ff8000;
+}
+
+.orange:active,
+.orange:hover,
+.orange:focus {
+  color: white;
+  background-color: #ff8000;
+}
+
+.purple {
+  color: #7044ff;
+}
+
+.purple:active,
+.purple:hover,
+.purple:focus {
+  color: white;
+  background-color: #7044ff;
+}

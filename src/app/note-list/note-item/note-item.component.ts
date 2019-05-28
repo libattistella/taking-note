@@ -19,10 +19,6 @@ export class NoteItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  onShow() {
-    this.router.navigateByUrl('/' + this.index);
-  }
-
   onEdit() {
     this.router.navigateByUrl('/' + this.index);
   }

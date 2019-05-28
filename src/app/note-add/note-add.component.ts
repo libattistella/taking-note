@@ -13,7 +13,8 @@ export class NoteAddComponent implements OnInit {
 
   note: Note = {
     title: '',
-    description: ''
+    description: '',
+    color: ''
   };
   noteForm: FormGroup;
 
@@ -36,11 +37,35 @@ export class NoteAddComponent implements OnInit {
     this.note.description = this.noteForm.controls.description.value;
     console.log(this.note);
     this.noteSvc.addNote(this.note);
-    this.onCancel();
+    this.initForm();
   }
 
   onCancel() {
-    this.router.navigateByUrl('/');
+    this.initForm();
+  }
+
+  setColorBlue() {
+    this.note.color = '#3880ff';
+  }
+
+  setColorRed() {
+    this.note.color = '#f04141';
+  }
+
+  setColorYellow() {
+    this.note.color = '#ffce00';
+  }
+
+  setColorGreen() {
+    this.note.color = '#10dc60';
+  }
+
+  setColorOrange() {
+    this.note.color = '#ff8000';
+  }
+
+  setColorPurple() {
+    this.note.color = '#7044ff';
   }
 
 }

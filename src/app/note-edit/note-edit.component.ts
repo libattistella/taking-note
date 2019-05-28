@@ -49,4 +49,28 @@ export class NoteEditComponent implements OnInit {
     this.router.navigateByUrl('/');
   }
 
+  setColorBlue() {
+    this.note.color = '#3880ff';
+  }
+
+  setColorRed() {
+    this.note.color = '#f04141';
+  }
+
+  setColorYellow() {
+    this.note.color = '#ffce00';
+  }
+
+  setColorGreen() {
+    this.note.color = '#10dc60';
+  }
+
+  setColorOrange() {
+    this.note.color = '#ff8000';
+  }
+
+  setColorPurple() {
+    this.note.color = '#7044ff';
+  }
+
 }

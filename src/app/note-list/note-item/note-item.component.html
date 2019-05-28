@@ -1,8 +1,9 @@
-<div class="card note" (click)="onShow()">
-  <div class="card-body">
-    <h6 class="card-subtitle mb-2 text-muted">{{ note.title }}</h6>
-    <p class="card-text">{{ note.description }}</p>
-    <button class="btn btn-link btn-sm note-btn edit-btn" (click)="onEdit()">Editar</button>
-    <button class="btn btn-link btn-sm note-btn remove-btn" (click)="onRemove()">Eliminar</button>
+<div class="card note" [ngStyle]="{'background-color': note.color}" (click)="onEdit()">
+  <div class="card-body note-body">
+    <button type="button" class="close note-close" aria-label="Close" (click)="onRemove()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <h6 class="card-subtitle mb-2 note-title">{{ note.title }}</h6>
+    <p class="card-text note-description">{{ note.description | truncateText:[50] }}</p>
   </div>
 </div>

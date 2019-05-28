@@ -10,15 +10,18 @@ export class NotesService {
   notesChanged = new Subject<Note[]>();
   notes: Note[] = [{
     title: 'Titulo 1',
-    description: 'Descripcion 1'
+    description: 'Descripcion 1',
+    color: '#10dc60'
   },
   {
     title: 'Titulo 2',
-    description: 'Descripcion 2'
+    description: 'Descripcion 2',
+    color: '#7044ff'
   },
   {
     title: 'Titulo 3',
-    description: 'Descripcion 3'
+    description: 'Descripcion 3',
+    color: '#f04141'
   }];
 
   constructor() { }
@@ -28,7 +31,7 @@ export class NotesService {
   }
 
   getNote(index: number) {
-    return this.notes[index];
+    return {...this.notes[index]};
   }
 
   addNote(note: Note) {
