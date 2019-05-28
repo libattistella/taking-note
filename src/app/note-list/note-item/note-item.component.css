@@ -1,0 +1,24 @@
+.note {
+  width: 90%;
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.note:active,
+.note:hover {
+  background-color: greenyellow;
+}
+
+.note-title p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.note-description {
+  font-size: 1rem;
+  font-style: italic;
+}

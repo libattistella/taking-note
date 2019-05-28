@@ -1,0 +1,47 @@
+/* .panel {
+  display: block;
+  width: 100%;
+  height: 95vh;
+  margin: 0;
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.detail {
+  position: absolute;
+  left: 30%;
+  top: 0;
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+} */
+
+.bar {
+  display: block;
+  text-align: right;
+}
+
+/* .bar button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0.5rem;
+} */
+
